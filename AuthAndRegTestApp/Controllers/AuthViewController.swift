@@ -9,7 +9,6 @@ import UIKit
 
 class AuthViewController: UIViewController {
     
-    
     private var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -81,23 +80,17 @@ class AuthViewController: UIViewController {
     private func setupViews() {
         title = "SignIn"
         view.backgroundColor = .white
-        
-//        view.addSubview(scrollView)
-//        scrollView.addSubview(backgroundView)
-        
+    
         textFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField],
                                           axis: .vertical,
                                           spacing: 10,
                                           distribution: .fillEqually)
-//        backgroundView.addSubview(textFieldsStackView)
-//
-//        backgroundView.addSubview(loginLabel)
         
         buttonStackView = UIStackView(arrangedSubviews: [signInButton, signUpButton],
                                             axis: .horizontal,
                                             spacing: 10,
                                             distribution: .fillEqually)
-//        backgroundView.addSubview(buttonFieldsStackView)
+
         view.addSubview(scrollView)
         scrollView.addSubview(backgroundView)
         backgroundView.addSubview(textFieldsStackView)
@@ -110,14 +103,12 @@ class AuthViewController: UIViewController {
         passwordTextField.delegate = self
     }
     
-    
-
     @objc private func signUpButtonTapped() {
-        
+        print("signUpButtonTapped")
     }
     
     @objc private func signInButtonTapped() {
-        
+        print("signInButtonTapped")
     }
 }
 
