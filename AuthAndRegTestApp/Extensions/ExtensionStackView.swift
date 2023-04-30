@@ -1,9 +1,3 @@
-//
-//  ExtensionStackView.swift
-//  AuthAndRegTestApp
-//
-//  Created by Nikita Nemtsu on 26.03.2023.
-//
 
 import UIKit
 
